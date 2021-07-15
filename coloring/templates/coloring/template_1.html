@@ -1,0 +1,187 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<title>P3 Coloring</title>
+
+	<link rel="stylesheet" type="text/css" href="{% static '/coloring/vendors/bootstrap/css/bootstrap.css' %}" />
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+	<script type="text/javascript" src="{% static 'coloring/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'coloring/vendors/paper/paper-full.min.js' %}"></script>
+	<!-- <script type="text/javascript" src="{% static 'coloring/vendors/bootstrap/bootstrap.min.js' %}"></script> -->
+
+	<style type="text/css">
+
+		#logo{
+			background-color: #474646;
+			/*padding-top: 225px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 58%;*/
+		}
+
+
+		#buttonBox{
+			padding-top: 20px;
+			display: block;
+			padding-left: 110px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 30%;
+		}
+
+		.button {
+		  background-color: #90C5F5;
+		  border: none;
+		  color: white;
+		  padding: 10px 40px;
+		  border-radius: 8px;
+		  white-space: nowrap;
+		  text-align: center;
+		  font-family: 'Poppins';
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 30px;
+		}
+
+		h1{
+			font-family: 'Poppins';
+			color: white;
+			position: absolute;
+			left: 33%;
+			top: 40%;
+			transform: translate(-50%, -50%);
+		}
+
+/*		#col-5{
+			position: absolute;
+			left: 35%;
+			top: 40%;
+			transform: translate(-50%, -50%);
+		}*/
+
+		.center{
+			width: 72px;
+    		height: 72px;
+    		margin: auto;
+		}
+
+		.left_click_img{
+			width: 150px;
+    		height: 150px;
+		}
+
+		.left_click{
+			padding-top: 150px; 
+			padding-left: 30px;
+		}
+
+		.right_click_img{
+			width: 150px;
+    		height: 150px;
+		}
+
+		.right_click{
+			padding-top: 150px; 
+			padding-left: 10px;
+		}
+
+		.man{
+			padding-left: 130px;
+		}
+
+		.man_img{
+
+		}
+
+		h2{
+			text-align: center;
+			font-size: 35px;
+			font-family: 'Poppins';
+			color: #90C5F5;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		h3{
+			text-align: center;
+			font-family: 'Poppins';
+			font-size: 200px;
+			color: white;
+			position: absolute;
+			left: 50%;
+			top: 40%;
+			transform: translate(-50%, -50%);
+		}
+
+		p{
+			text-align: center;
+			font-family: 'Poppins';
+			font-size: 40px;
+			color: white;
+			position: absolute;
+			left: 50%;
+			top: 70%;
+			transform: translate(-50%, -50%);
+		}
+		
+	</style>
+
+	
+</head>
+<body style="background-color: #474646">
+	<!-- <div id="logo">
+		<img src="https://see.fontimg.com/api/renderfont4/MVVPp/eyJyIjoiZnMiLCJoIjoxOTgsInciOjEwMDAsImZzIjoxOTgsImZnYyI6IiNGRkZGRkYiLCJiZ2MiOiIjMDAwMDAwIiwidCI6MX0/QnJ1c2g/brush-king.png" alt="Brush fonts" width="200" height="80">
+	</div> -->
+	<div class="container-fluid" style="height: 100vh background-color: #474646">
+			<div class="row">
+	  			<div class="col py-4 px-lg-5" style="height: 13vh">
+	  				<img src="https://see.fontimg.com/api/renderfont4/MVVPp/eyJyIjoiZnMiLCJoIjoxOTgsInciOjEwMDAsImZzIjoxOTgsImZnYyI6IiNGRkZGRkYiLCJiZ2MiOiIjMDAwMDAwIiwidCI6MX0/QnJ1c2g/brush-king.png"  alt="Brush fonts" width="200" height="80">
+	  			</div>
+	 			<div class="col-9">
+	 				<h1>Choose Template</h1>
+	 			</div>
+				<div class="w-100"></div>
+			    <div class="col" style="height: 12vh">
+			    	<h2>Choose the template you want to color:</h2>
+			    </div>
+				<div class="w-100"></div>
+			    <div class="col" style="height: 55vh">
+			    	<div class="left_click">
+			    		<img class="left_click_img" src="https://i.ibb.co/BCFdWP5/outline-arrow-back-ios-white-48dp.png" alt="outline-arrow-back-ios-white-48dp" border="0">
+			    	</div>
+			    </div>
+				<div class="col-8">
+					<!-- <h3>21</h3>
+					<p>minutes</p> -->
+					<div class="man">
+						<!-- <img class="man_img" src="https://i.ibb.co/5TDFkMf/Screen-Shot-2021-07-14-at-5-27-29-PM.png" alt="Screen-Shot-2021-07-14-at-5-27-29-PM" border="0"> -->
+						<img class="man_img" src="https://i.ibb.co/qsKvvzx/Screen-Shot-2021-07-14-at-5-40-10-PM.png" alt="Screen-Shot-2021-07-14-at-5-40-10-PM" border="0">
+				    </div>
+				</div>
+				<div class="col">
+					<div class="right_click">
+						<a href="/coloring/template_2">
+							<img class="right_click_img" src="https://i.ibb.co/0tDpfYN/outline-arrow-forward-ios-white-48dp.png" alt="outline-arrow-forward-ios-white-48dp" border="0">
+						</a>
+					</div>
+				</div>
+				<div class="w-100"></div>
+			    <div class="col" style="height: 20vh">
+			    	<div id="buttonBox">
+						<a href="#" class="button">Let's go!</a>
+					</div>
+			    </div>
+			</div>
+		</div>
+	
+
+
+</body>
+</html>

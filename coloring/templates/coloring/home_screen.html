@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<title>P3 Coloring</title>
+
+	<link rel="stylesheet" type="text/css" href="{% static '/coloring/vendors/bootstrap/css/bootstrap.css' %}" />
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+	<script type="text/javascript" src="{% static 'coloring/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'coloring/vendors/paper/paper-full.min.js' %}"></script>
+	<!-- <script type="text/javascript" src="{% static 'coloring/vendors/bootstrap/bootstrap.min.js' %}"></script> -->
+
+	<style type="text/css">
+
+		#logo{
+			background-color: #474646;
+			padding-top: 225px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 58%;
+		}
+
+
+		#buttonBox{
+			padding-top: 60px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 30%;
+		}
+
+		.button {
+		  background-color: white;
+		  border: none;
+		  color: #90C5F5;
+		  padding: 15px 60px;
+		  border-radius: 8px;
+		  white-space: nowrap;
+		  text-align: center;
+		  font-family: 'Poppins';
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 40px;
+		}
+
+		/*.button:hover {background-color: #3e8e41}
+
+		.button:active {
+		  background-color: #3e8e41;
+		  box-shadow: 0 5px #666;
+		  transform: translateY(4px);*/
+		}
+
+	</style>
+
+	
+</head>
+<body style="background-color: #474646">
+	<div id="logo">
+		<img src="https://see.fontimg.com/api/renderfont4/MVVPp/eyJyIjoiZnMiLCJoIjoxOTgsInciOjEwMDAsImZzIjoxOTgsImZnYyI6IiNGRkZGRkYiLCJiZ2MiOiIjMDAwMDAwIiwidCI6MX0/QnJ1c2g/brush-king.png" alt="Brush fonts" width="800" height="320" class="center">
+	</div>
+	<div id="buttonBox">
+		<!-- <button type="button">New Coloring</button> -->
+		<a href="/coloring/timer_screen" class="button">New Coloring</a>
+	</div>
+
+
+</body>
+</html>
